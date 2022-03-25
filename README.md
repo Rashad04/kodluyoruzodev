@@ -1,1 +1,3 @@
 # kodluyoruzodev
+ www.patika.dev
+ 
