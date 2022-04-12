@@ -1,73 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bitkimagazasi.css">
-    <title> Bitki Mağazası | Ürünlerimiz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    .nav {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    li {
+      width: 150px;
+      margin: 5px;
+      padding: 5px;
+      border-color: beige;
+      border-style: solid;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    a:link,
+    a:visited{
+      display: block;
+      font-weight: bold;
+      color: rgb(41, 10, 10);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      display: block;
+      color: black;
+    }
+    h1 {
+      padding-left: 50px;
+      padding-top: 20px;
+    }
+    .metn1{
+      font-size: 30px;
+      padding-left: 450px;
+      padding-top: 15px;
+    }
+    .metn2{
+      padding-left: 20px;
+      font-size: 15px;
+      color: crimson;
+    }
+    img{
+      height: 250px;
+      width: 350px;
+    }
+    figcaption{
+       font-weight: bold;
+    }
+    .col-4{
+      margin-top: 10px;
+    }
+    .foot{
+      font-size: 20px;
+     
+      padding-left: 110px;
+    }
+   .footer{
+     border: 1px solid blue;
+     width: 113px;
+     background-color: beige;
+     
+   }
+  </style>
+  <title>Ürünlerimiz | Bitki Mağazası</title>
 </head>
 
-<body>
-    <!-- navbar start -->
-    <header>
-        <nav>
-            <ul class="liste1">
-                <li><a href="anasayfa.html">Ansayfa</a> </li>
-                <li> <a href="urunlerimiz.html">Ürünlerimiz</a> </li>
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            </ul>
-        </nav>
-        <!-- navbar end -->
-    </header>
-    <!-- content start -->
-    <section>
-        <!-- article start sikas -->
-        <article>
-            <p class="metn1">İşte bir-birinden güzel bitki çeşitleri <br>
-            <p style="color: black; font-size: 20px;text-align: center; "> Not: Bitkilerın bakımı hakkında bilgileri
-                resimlerin üzerine tıklayarak albilirsiniz. </p>
-            </p>
-            <a href="https://fidebutik.com/Blog/sikas-cycas-palmiyesi-bakimi/29" target="_blank"><img class="sikas"
-                    src="https://i.pinimg.com/originals/49/8a/99/498a99a3760550ccfc463c8e6b8b6457.jpg" alt="sikas"></a>
-            <h4>Sikas 110₺ </h4>
-        </article>
-        <!-- article end -->
-        <!-- article start adisimsir -->
-        <article>
-            <a href="https://www.cicekal.net/blog/simsir-agaci-bakimi/" target="_blank"><img class="simsir"
-                    src="https://elikasus.com/media/image/buxus-sempervirens-pyramidalis-simsir-1.jpg"
-                    alt="adisimsir"></a>
-            <h4>Adi Şimşir 75₺ </h4>
-        </article>
-        <!-- article end -->
-        <!-- article start gulibsirim -->
-        <article>
-            <a href="https://evhayat.com/gulibrisim-agaci-yetistirilmesi-ve-bakimi/"><img
-                    src="https://www.turn-it-tropical.co.uk/wp-content/uploads/2019/04/albizia-julibrissin.-ombrella.jpg"
-                    alt="gulibsirim"></a>
-            <h4>Gülibşirim 119₺</h4>
-        </article>
-        <!-- article end -->
-        <!-- article start -->
-        <article>
-            <a href="https://www.cicekal.net/blog/erguvan-agaci-bakimi/" target="_blank"><img
-                    src="https://galeri.uludagsozluk.com/24/erguvan-rengi_73819.jpg" alt="erguvan"></a>
-            <h4>Erguvan 80₺</h4>
-        </article>
-        <!-- article end -->
-        <!-- article start -->
-        <Article>
-           <a href="https://www.bitkibakimi.com/cicek/255-areka-bitkisi-bakimi-ve-yetistirilmesi-hakkinda-genel-bilgiler.aspx"><img height="700px"  src="https://sklep.donwil.pl/wp-content/uploads/2021/01/Palma-Kentia-120cm-1024x1024.jpg" alt="areka"></a>
-           <h4>Areka 800₺</h4>
-        </Article>
-        <!-- article end -->
+<body style="background-color:  #E9ECEF;">
+  <header>
+    <h1 class="text-success">Ürünlerimiz</h1>
+    <nav style="background-color: burlywood;">
+      <ul class="nav">
+        <li class="liste1"><a href="anasayfa.html"> Anasayfa</a></li>
+        <li class="liste1"><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+        <li class="liste1"><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- section-1ci sira -->
+  <section>
+    <p class="metn1">İşte bir-birinden güzel bitki çeşitleri</p>
+    <p class="metn2">Not:Bitkilerin bakımı hakkında bilgiyi resimlerin üzerine tıklayarak alabilirsiniz.</p>
+     <div class="container mt-4" >
+       <div class="row B">
+         <div class="col-4">
+           <div class="card text-center">
+         <a href="https://fidebutik.com/Blog/sikas-cycas-palmiyesi-bakimi/29" target="_blank"><img class="sikas" src="https://i.pinimg.com/originals/49/8a/99/498a99a3760550ccfc463c8e6b8b6457.jpg" alt="sikas"></a>
+         <figcaption>Gülibşirim 119₺</figcaption>
+         </div>
+        </div>
+         <div class="col-4">
+           <div class="card text-center"> 
+            <a href="https://www.cicekal.net/blog/simsir-agaci-bakimi/">
+              <img class="simsir " src="https://elikasus.com/media/image/buxus-sempervirens-pyramidalis-simsir-1.jpg"
+              alt="adisimsir" alt="simsir">
+              <figcaption>Adi Şimşir 75₺</figcaption>
+            </a>
+          </div>
+         </div>
+         <div class="col-4">
+           <div class="card text-center" >
+          <a href="https://evhayat.com/gulibrisim-agaci-yetistirilmesi-ve-bakimi/">
+            <img class="gulib" src="https://www.turn-it-tropical.co.uk/wp-content/uploads/2019/04/albizia-julibrissin.-ombrella.jpg" alt="gulibsirim">
+          </a>
+          <figcaption>Gülibşirim 119₺</figcaption>
+     </div>
+  </section>
+  <!-- article-2ci sira -->
+  <article>
+    <div class="container mt-4">
+      <div class="row B" >
+      <div class="col-4">
+        <div class="card text-center">
+          <a href="https://www.cicekal.net/blog/erguvan-agaci-bakimi/">
+            <img class="erguvan" src="https://galeri.uludagsozluk.com/24/erguvan-rengi_73819.jpg" alt="erguvan">
+          </a>
+          <figcaption>Erguvan 80₺</figcaption>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-center">
+          <a href="https://www.bitkibakimi.com/cicek/255-areka-bitkisi-bakimi-ve-yetistirilmesi-hakkinda-genel-bilgiler.aspx">
+            <img src="https://sklep.donwil.pl/wp-content/uploads/2021/01/Palma-Kentia-120cm-1024x1024.jpg" alt="areka">
+          </a>
+          <figcaption>Areka 800₺</figcaption>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-center">
+             <a href="https://tr.domesticfutures.com/limequat-tree-information-8923">
+               <img src="https://www.mosgazon.ru/images/detailed/17/citrus_limonella_limequat_1.jpg" alt="limequat">
+             </a>
+             <figcaption>Limequat ağaçı 179₺</figcaption>
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+  <!-- article-3cu sira -->
+  <article>
+    <div class="container mt-4">
+      <div class="row B">
+        <div class="col-4">
+          <div class="card text-center">
+            <a href="https://yemek.com/baris-cicegi-bakimi/">
+              <img src="https://banafikirver.com/images/posts/2020/12/post-1608030394-6934-baris-cicegi.webp" alt="baris">
+            </a>
+            <figcaption>Barış çiçeği 199₺</figcaption>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <a href="https://yemek.com/sardunya-bakimi/">
+              <img src="https://pbs.twimg.com/media/DdD9b-LXUAAKMRx.jpg" alt="sardunya">
+            </a> 
+            <figcaption>Sardunya çiçeği 39,93₺</figcaption>
+          </div>
+        </div>
+             <div class="col-4">
+               <div class="card text-center">
+                 <a href="https://www.hurriyet.com.tr/aile/bonsai-bakimi-nasil-yapilir-puf-noktalari-neler-428349#:~:text=Bonsai%20bitkisi%20yaz%20aylar%C4%B1nda%20haftada,Bunu%20yaparak%20b%C3%B6ceklenmeye%20engel%20oluruz.">
+                   <img src="https://i.pinimg.com/736x/49/94/f7/4994f715103428c3781e763519377436.jpg" alt="bonsai">
+                 </a>
+                 <figcaption>Bonsai ağaçı 158,60₺</figcaption>
+               </div>
+             </div>
+      </div>
+    </div>
+  </article>
+  <br><br><br>
+<footer>
+  <div class="foot">
+    Misyonumuz ve hakkımızda bilgi almak isterseniz <a class="footer" href="hakkimizda.html">Hakkımızda</a> bölümüne baka bilirsiniz.
+  </div>
+</footer>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    </section>
-    <!-- content end -->
-    <!-- footer start -->
-    <!-- footer end -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
-
 </html>
